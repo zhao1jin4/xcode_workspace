@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'MacBasicOC' target in the 'MacBasicOC' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "main_string:main_string.m">
+      </ContextState>
+      <ContextState
+         contextName = "main_http:main_http.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "post">
+            </PersistentString>
+            <PersistentString
+               value = "returnData">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "log:main_c.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "text.length">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

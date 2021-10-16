@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12A269" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="4">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Hello World in iPad" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hXb-S2-yLj">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dSP-gO-N0U">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="149" id="wSo-DR-GFu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="textKeybord:" destination="2" eventType="editingDidEndOnExit" id="ps0-aY-jPF"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GI0-oJ-tlZ">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Show Alert in iPad">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnClicked1:" destination="2" eventType="touchUpInside" id="6lt-vd-RgZ"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NzW-fU-kjI">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="233" id="fZQ-UC-gUW"/>
+                                    <constraint firstAttribute="width" constant="356" id="wR7-E9-ZcC"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ERJ-o2-gqQ"/>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="dYV-xJ-ewF">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="39" id="5bF-qY-ojV"/>
+                                </constraints>
+                            </pageControl>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tX3-4s-4Gt">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="420" id="moF-Tc-yGN"/>
+                                </constraints>
+                            </pickerView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="测试字体" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOj-8w-4Xx">
+                                <color key="backgroundColor" red="0.49367903066528046" green="0.82368800951086962" blue="0.27204398009366609" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="An3-wY-bsI"/>
+                                    <constraint firstAttribute="width" constant="159" id="Zr1-Pr-ZBq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Jty-rX-olt">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="345" id="YiN-2m-8Gj"/>
+                                    <constraint firstAttribute="height" constant="365" id="ujQ-OC-v5s"/>
+                                </constraints>
+                            </mapView>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sAo-JZ-Vfh">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="714" id="Idw-r7-L3M"/>
+                                    <constraint firstAttribute="height" constant="314" id="RfH-D6-SLM"/>
+                                </constraints>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.24747367527173914" green="0.24747367527173914" blue="0.24747367527173914" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="tX3-4s-4Gt" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="383" id="3AM-Bw-Uqe"/>
+                            <constraint firstItem="hXb-S2-yLj" firstAttribute="top" secondItem="5" secondAttribute="top" constant="274" id="4Jo-Wd-tzt"/>
+                            <constraint firstItem="xOj-8w-4Xx" firstAttribute="top" secondItem="5" secondAttribute="top" constant="5" id="72P-cz-HQp"/>
+                            <constraint firstItem="GI0-oJ-tlZ" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="74" id="8b9-EA-eX9"/>
+                            <constraint firstItem="Jty-rX-olt" firstAttribute="top" secondItem="dSP-gO-N0U" secondAttribute="top" type="default" id="8hR-Hq-dKg"/>
+                            <constraint firstItem="NzW-fU-kjI" firstAttribute="trailing" secondItem="ERJ-o2-gqQ" secondAttribute="trailing" type="default" id="9Vr-Ht-JfX"/>
+                            <constraint firstItem="sAo-JZ-Vfh" firstAttribute="top" secondItem="dYV-xJ-ewF" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="HNY-k9-7hV"/>
+                            <constraint firstItem="GI0-oJ-tlZ" firstAttribute="centerX" secondItem="dSP-gO-N0U" secondAttribute="centerX" type="default" id="HfM-kQ-EJL"/>
+                            <constraint firstItem="sAo-JZ-Vfh" firstAttribute="trailing" secondItem="Jty-rX-olt" secondAttribute="trailing" type="default" id="Kv0-fi-exy"/>
+                            <constraint firstItem="dYV-xJ-ewF" firstAttribute="top" secondItem="NzW-fU-kjI" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="P4Z-8s-Ckb"/>
+                            <constraint firstAttribute="trailing" secondItem="xOj-8w-4Xx" secondAttribute="trailing" constant="151" id="PET-ei-1os"/>
+                            <constraint firstAttribute="bottom" secondItem="sAo-JZ-Vfh" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="W5l-Qv-OXV"/>
+                            <constraint firstItem="sAo-JZ-Vfh" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="XMK-nb-J9s"/>
+                            <constraint firstItem="NzW-fU-kjI" firstAttribute="top" secondItem="ERJ-o2-gqQ" secondAttribute="top" type="default" id="ZEL-DR-yOe"/>
+                            <constraint firstItem="NzW-fU-kjI" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="bzC-2I-U47"/>
+                            <constraint firstItem="tX3-4s-4Gt" firstAttribute="top" secondItem="xOj-8w-4Xx" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="cDc-TU-hHN"/>
+                            <constraint firstItem="dSP-gO-N0U" firstAttribute="centerX" secondItem="hXb-S2-yLj" secondAttribute="centerX" type="default" id="gnH-UB-pKN"/>
+                            <constraint firstItem="dYV-xJ-ewF" firstAttribute="top" secondItem="ERJ-o2-gqQ" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="kf8-zy-paG"/>
+                            <constraint firstItem="dYV-xJ-ewF" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="153" id="qLE-hP-edn"/>
+                            <constraint firstItem="ERJ-o2-gqQ" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="ruH-Xz-fgy"/>
+                            <constraint firstItem="GI0-oJ-tlZ" firstAttribute="top" secondItem="5" secondAttribute="top" constant="332" id="sZ4-3t-0hm"/>
+                            <constraint firstItem="sAo-JZ-Vfh" firstAttribute="top" secondItem="Jty-rX-olt" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="tWX-2C-knP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView1" destination="ERJ-o2-gqQ" id="DAr-Bd-Ji5"/>
+                        <outlet property="imageView2" destination="NzW-fU-kjI" id="BaU-Cs-eap"/>
+                        <outlet property="labelFont" destination="xOj-8w-4Xx" id="gx2-iA-rmH"/>
+                        <outlet property="map" destination="Jty-rX-olt" id="vQY-N0-BCK"/>
+                        <outlet property="pageControl" destination="dYV-xJ-ewF" id="tyo-h5-Isq"/>
+                        <outlet property="pickerView" destination="tX3-4s-4Gt" id="U4x-i3-WZh"/>
+                        <outlet property="txtName" destination="dSP-gO-N0U" id="be7-Ch-kVa"/>
+                        <outlet property="webView" destination="sAo-JZ-Vfh" id="YAB-Zg-E9N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-139" y="-367"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="btnClicked1:"/>
+                <relationship kind="action" name="dateChanged:"/>
+                <relationship kind="action" name="dynamicClick:"/>
+                <relationship kind="action" name="textKeybord:"/>
+                <relationship kind="outlet" name="datePicker" candidateClass="UIDatePicker"/>
+                <relationship kind="outlet" name="imageView1" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="imageView2" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="labelFont" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="map" candidateClass="MKMapView"/>
+                <relationship kind="outlet" name="pageControl" candidateClass="UIPageControl"/>
+                <relationship kind="outlet" name="pickerView" candidateClass="UIPickerView"/>
+                <relationship kind="outlet" name="progress" candidateClass="UIProgressView"/>
+                <relationship kind="outlet" name="txtName" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

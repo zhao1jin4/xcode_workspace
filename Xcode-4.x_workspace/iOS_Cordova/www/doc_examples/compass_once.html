@@ -1,0 +1,42 @@
+  
+<!-- 指南针 一次性取值-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Compass Example</title>
+        
+        <script type="text/javascript" charset="utf-8" src="../cordova-dev.js"></script>
+        <script type="text/javascript" charset="utf-8">
+            
+            // Wait for Cordova to load
+            //
+            document.addEventListener("deviceready", onDeviceReady, false);
+            
+            // Cordova is ready
+            //
+            function onDeviceReady() {
+                navigator.compass.getCurrentHeading(onSuccess, onError);//Anroid真机报错误代码 3
+            }
+            
+            // onSuccess: Get the current heading
+            //
+            function onSuccess(heading) {
+                alert('Heading: ' + heading.magneticHeading);
+            }
+            
+            // onError: Failed to get the heading
+            //
+            function onError(compassError) {
+                alert('Compass Error: ' + compassError.code);
+            }
+            
+            </script>
+    </head>
+    <body>
+        <h1>Example</h1>
+        <p>getCurrentHeading</p>
+    </body>
+    
+    <button onclick="history.back()">go back</button>
+    
+</html>

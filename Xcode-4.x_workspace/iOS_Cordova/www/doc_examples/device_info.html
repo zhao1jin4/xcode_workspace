@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Device Properties Example</title>
+
+    <script type="text/javascript" charset="utf-8" src="../cordova-dev.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+    // Wait for Cordova to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // Cordova is ready
+    //
+    function onDeviceReady() {
+        var element = document.getElementById('deviceProperties');
+
+        element.innerHTML = 'Device Name: '     + device.name     + '<br />' +   //iPad
+                            'Device Cordova: '  + device.cordova + '<br />' +   //2.7.0
+                            'Device Platform: ' + device.platform + '<br />' +  //iOS
+                            'Device UUID: '     + device.uuid     + '<br />' +  //
+                            'Device Model: '    + device.model     + '<br />' +  //iPad3,3
+                            'Device Version: '  + device.version  + '<br />';   //5.1.1  
+    }
+/*
+iPad模拟器也可以测试
+iOS5.1.1的iPad真机的信息是
+    Device Name: iPad
+    Device Cordova:2.7.0
+    Device Platform: iOS
+
+    Device Model:iPad3,3
+    Device Version: 5.1.1
+HuaWei真机信息是
+ Device Name: undefined
+ Device Cordova:dev
+ Device Platform: Anroid
+ 
+ Device Model:HUAWEI G520-0000
+ Device Version: 4.1.2
+*/
+    
+    </script>
+  </head>
+  <body>
+    <p id="deviceProperties">Loading device properties...</p>
+      
+      
+       <button onclick="history.back()">go back</button> 
+  </body>
+</html>

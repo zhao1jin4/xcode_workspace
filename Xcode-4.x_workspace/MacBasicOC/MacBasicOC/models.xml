@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<models>
+	<model type="laptop">
+		MacBook Pro
+	</model>
+	<model type="laptop">
+		MacBook
+	</model>
+	<model type="desktop">
+		iMac
+	</model>
+	<model type="desktop">
+		Mac Mini
+	</model>
+</models>

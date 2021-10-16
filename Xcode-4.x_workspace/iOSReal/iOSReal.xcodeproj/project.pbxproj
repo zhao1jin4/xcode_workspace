@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D12C9601772F88D00830B90 /* ZHCoreBluetoothServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D12C95F1772F88D00830B90 /* ZHCoreBluetoothServerViewController.m */; };
+		3D12C9631772F89F00830B90 /* ZHCoreBluetoothClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D12C9621772F89F00830B90 /* ZHCoreBluetoothClientViewController.m */; };
+		3D2F3DB21772C75000F04752 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D2F3DB11772C75000F04752 /* CoreBluetooth.framework */; };
+		3D553A7A17297EAD00CAB630 /* ZHThreeTouchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D553A7917297EAD00CAB630 /* ZHThreeTouchView.m */; };
+		3D7752F3175C329A00259C78 /* ZHAcceleroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7752F2175C329A00259C78 /* ZHAcceleroViewController.m */; };
+		3D7752F5175C32C200259C78 /* boy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D7752F4175C32C200259C78 /* boy.jpg */; };
+		3D7CBE921761A71C00FD49A7 /* ZHBluethoothViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D7CBE911761A71C00FD49A7 /* ZHBluethoothViewController.m */; };
+		3D7CBE941761ACB700FD49A7 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D7CBE931761ACB700FD49A7 /* GameKit.framework */; };
+		3D9DA84D17278D3C00565FD8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9DA84C17278D3C00565FD8 /* UIKit.framework */; };
+		3D9DA84F17278D3C00565FD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9DA84E17278D3C00565FD8 /* Foundation.framework */; };
+		3D9DA85117278D3C00565FD8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9DA85017278D3C00565FD8 /* CoreGraphics.framework */; };
+		3D9DA85717278D3C00565FD8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D9DA85517278D3C00565FD8 /* InfoPlist.strings */; };
+		3D9DA85917278D3C00565FD8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9DA85817278D3C00565FD8 /* main.m */; };
+		3D9DA85D17278D3C00565FD8 /* ZHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9DA85C17278D3C00565FD8 /* ZHAppDelegate.m */; };
+		3D9DA85F17278D3C00565FD8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D9DA85E17278D3C00565FD8 /* Default.png */; };
+		3D9DA86117278D3C00565FD8 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D9DA86017278D3C00565FD8 /* Default@2x.png */; };
+		3D9DA86317278D3C00565FD8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D9DA86217278D3C00565FD8 /* Default-568h@2x.png */; };
+		3D9DA86617278D3C00565FD8 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9DA86417278D3C00565FD8 /* MainStoryboard_iPhone.storyboard */; };
+		3D9DA86917278D3C00565FD8 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9DA86717278D3C00565FD8 /* MainStoryboard_iPad.storyboard */; };
+		3D9DA86C17278D3C00565FD8 /* ZHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9DA86B17278D3C00565FD8 /* ZHViewController.m */; };
+		3D9DA87417278D3C00565FD8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9DA87317278D3C00565FD8 /* SenTestingKit.framework */; };
+		3D9DA87517278D3C00565FD8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9DA84C17278D3C00565FD8 /* UIKit.framework */; };
+		3D9DA87617278D3C00565FD8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9DA84E17278D3C00565FD8 /* Foundation.framework */; };
+		3D9DA87E17278D3C00565FD8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3D9DA87C17278D3C00565FD8 /* InfoPlist.strings */; };
+		3D9DA88117278D3C00565FD8 /* iOSRealTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9DA88017278D3C00565FD8 /* iOSRealTests.m */; };
+		3D9DA89317278F3700565FD8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9DA89217278F3700565FD8 /* MapKit.framework */; };
+		3D9DA8A21727A6CA00565FD8 /* apple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D9DA8A11727A6CA00565FD8 /* apple.jpg */; };
+		3D9DA8B91727BB9200565FD8 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9DA8B81727BB9200565FD8 /* CoreMotion.framework */; };
+		3DD76CB61727C04B001576FA /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9DA8B81727BB9200565FD8 /* CoreMotion.framework */; };
+		3DD76CB71727C08F001576FA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9DA8981727995200565FD8 /* CoreLocation.framework */; };
+		3DE42DF6173607A800E0F1C2 /* compass.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DE42DF5173607A800E0F1C2 /* compass.png */; };
+		3DE42DF817360A6800E0F1C2 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE42DF717360A6800E0F1C2 /* AVFoundation.framework */; };
+		3DE42DFA17360A7100E0F1C2 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE42DF917360A7000E0F1C2 /* CoreMedia.framework */; };
+		3DE42DFC17360AD900E0F1C2 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DE42DFB17360AD900E0F1C2 /* AssetsLibrary.framework */; };
+		3DEAF9B31769D078009B384D /* MyMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DEAF9B21769D078009B384D /* MyMapAnnotation.m */; };
+		3DEAF9B41769D0EA009B384D /* MyMapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DEAF9B21769D078009B384D /* MyMapAnnotation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D9DA87717278D3C00565FD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D9DA83F17278D3C00565FD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D9DA84717278D3C00565FD8;
+			remoteInfo = iOSReal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D12C95E1772F88D00830B90 /* ZHCoreBluetoothServerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHCoreBluetoothServerViewController.h; sourceTree = "<group>"; };
+		3D12C95F1772F88D00830B90 /* ZHCoreBluetoothServerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHCoreBluetoothServerViewController.m; sourceTree = "<group>"; };
+		3D12C9611772F89E00830B90 /* ZHCoreBluetoothClientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHCoreBluetoothClientViewController.h; sourceTree = "<group>"; };
+		3D12C9621772F89F00830B90 /* ZHCoreBluetoothClientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHCoreBluetoothClientViewController.m; sourceTree = "<group>"; };
+		3D2F3DB11772C75000F04752 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		3D553A7817297EAD00CAB630 /* ZHThreeTouchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHThreeTouchView.h; sourceTree = "<group>"; };
+		3D553A7917297EAD00CAB630 /* ZHThreeTouchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHThreeTouchView.m; sourceTree = "<group>"; };
+		3D71928B1773E8EC0035B180 /* TransferService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransferService.h; sourceTree = "<group>"; };
+		3D7752F1175C329A00259C78 /* ZHAcceleroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHAcceleroViewController.h; sourceTree = "<group>"; };
+		3D7752F2175C329A00259C78 /* ZHAcceleroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHAcceleroViewController.m; sourceTree = "<group>"; };
+		3D7752F4175C32C200259C78 /* boy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boy.jpg; sourceTree = "<group>"; };
+		3D7CBE901761A71C00FD49A7 /* ZHBluethoothViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHBluethoothViewController.h; sourceTree = "<group>"; };
+		3D7CBE911761A71C00FD49A7 /* ZHBluethoothViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHBluethoothViewController.m; sourceTree = "<group>"; };
+		3D7CBE931761ACB700FD49A7 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		3D9DA84817278D3C00565FD8 /* iOSReal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSReal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D9DA84C17278D3C00565FD8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3D9DA84E17278D3C00565FD8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3D9DA85017278D3C00565FD8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3D9DA85417278D3C00565FD8 /* iOSReal-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOSReal-Info.plist"; sourceTree = "<group>"; };
+		3D9DA85617278D3C00565FD8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3D9DA85817278D3C00565FD8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3D9DA85A17278D3C00565FD8 /* iOSReal-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSReal-Prefix.pch"; sourceTree = "<group>"; };
+		3D9DA85B17278D3C00565FD8 /* ZHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHAppDelegate.h; sourceTree = "<group>"; };
+		3D9DA85C17278D3C00565FD8 /* ZHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHAppDelegate.m; sourceTree = "<group>"; };
+		3D9DA85E17278D3C00565FD8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3D9DA86017278D3C00565FD8 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3D9DA86217278D3C00565FD8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3D9DA86517278D3C00565FD8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		3D9DA86817278D3C00565FD8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		3D9DA86A17278D3C00565FD8 /* ZHViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZHViewController.h; sourceTree = "<group>"; };
+		3D9DA86B17278D3C00565FD8 /* ZHViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZHViewController.m; sourceTree = "<group>"; };
+		3D9DA87217278D3C00565FD8 /* iOSRealTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSRealTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D9DA87317278D3C00565FD8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		3D9DA87B17278D3C00565FD8 /* iOSRealTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOSRealTests-Info.plist"; sourceTree = "<group>"; };
+		3D9DA87D17278D3C00565FD8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3D9DA87F17278D3C00565FD8 /* iOSRealTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iOSRealTests.h; sourceTree = "<group>"; };
+		3D9DA88017278D3C00565FD8 /* iOSRealTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSRealTests.m; sourceTree = "<group>"; };
+		3D9DA89217278F3700565FD8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3D9DA8981727995200565FD8 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3D9DA8A11727A6CA00565FD8 /* apple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = apple.jpg; sourceTree = "<group>"; };
+		3D9DA8B81727BB9200565FD8 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		3DE42DF5173607A800E0F1C2 /* compass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compass.png; sourceTree = "<group>"; };
+		3DE42DF717360A6800E0F1C2 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3DE42DF917360A7000E0F1C2 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		3DE42DFB17360AD900E0F1C2 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		3DEAF9B11769D078009B384D /* MyMapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMapAnnotation.h; sourceTree = "<group>"; };
+		3DEAF9B21769D078009B384D /* MyMapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMapAnnotation.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D9DA84517278D3C00565FD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D2F3DB21772C75000F04752 /* CoreBluetooth.framework in Frameworks */,
+				3D7CBE941761ACB700FD49A7 /* GameKit.framework in Frameworks */,
+				3DE42DFC17360AD900E0F1C2 /* AssetsLibrary.framework in Frameworks */,
+				3DE42DFA17360A7100E0F1C2 /* CoreMedia.framework in Frameworks */,
+				3DE42DF817360A6800E0F1C2 /* AVFoundation.framework in Frameworks */,
+				3DD76CB71727C08F001576FA /* CoreLocation.framework in Frameworks */,
+				3DD76CB61727C04B001576FA /* CoreMotion.framework in Frameworks */,
+				3D9DA89317278F3700565FD8 /* MapKit.framework in Frameworks */,
+				3D9DA84D17278D3C00565FD8 /* UIKit.framework in Frameworks */,
+				3D9DA84F17278D3C00565FD8 /* Foundation.framework in Frameworks */,
+				3D9DA85117278D3C00565FD8 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D9DA86E17278D3C00565FD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D9DA8B91727BB9200565FD8 /* CoreMotion.framework in Frameworks */,
+				3D9DA87417278D3C00565FD8 /* SenTestingKit.framework in Frameworks */,
+				3D9DA87517278D3C00565FD8 /* UIKit.framework in Frameworks */,
+				3D9DA87617278D3C00565FD8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D7752F0175C329900259C78 /* Accelero */ = {
+			isa = PBXGroup;
+			children = (
+				3D7752F1175C329A00259C78 /* ZHAcceleroViewController.h */,
+				3D7752F4175C32C200259C78 /* boy.jpg */,
+				3D7752F2175C329A00259C78 /* ZHAcceleroViewController.m */,
+			);
+			path = Accelero;
+			sourceTree = "<group>";
+		};
+		3D7CBE8F1761A71C00FD49A7 /* Bluethooth */ = {
+			isa = PBXGroup;
+			children = (
+				3D71928B1773E8EC0035B180 /* TransferService.h */,
+				3D7CBE901761A71C00FD49A7 /* ZHBluethoothViewController.h */,
+				3D7CBE911761A71C00FD49A7 /* ZHBluethoothViewController.m */,
+				3D12C95E1772F88D00830B90 /* ZHCoreBluetoothServerViewController.h */,
+				3D12C95F1772F88D00830B90 /* ZHCoreBluetoothServerViewController.m */,
+				3D12C9611772F89E00830B90 /* ZHCoreBluetoothClientViewController.h */,
+				3D12C9621772F89F00830B90 /* ZHCoreBluetoothClientViewController.m */,
+			);
+			path = Bluethooth;
+			sourceTree = "<group>";
+		};
+		3D9DA83D17278D3C00565FD8 = {
+			isa = PBXGroup;
+			children = (
+				3D2F3DB11772C75000F04752 /* CoreBluetooth.framework */,
+				3D7CBE931761ACB700FD49A7 /* GameKit.framework */,
+				3DE42DFB17360AD900E0F1C2 /* AssetsLibrary.framework */,
+				3DE42DF917360A7000E0F1C2 /* CoreMedia.framework */,
+				3DE42DF717360A6800E0F1C2 /* AVFoundation.framework */,
+				3D9DA85217278D3C00565FD8 /* iOSReal */,
+				3D9DA87917278D3C00565FD8 /* iOSRealTests */,
+				3D9DA84B17278D3C00565FD8 /* Frameworks */,
+				3D9DA84917278D3C00565FD8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D9DA84917278D3C00565FD8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D9DA84817278D3C00565FD8 /* iOSReal.app */,
+				3D9DA87217278D3C00565FD8 /* iOSRealTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D9DA84B17278D3C00565FD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D9DA8B81727BB9200565FD8 /* CoreMotion.framework */,
+				3D9DA8981727995200565FD8 /* CoreLocation.framework */,
+				3D9DA89217278F3700565FD8 /* MapKit.framework */,
+				3D9DA84C17278D3C00565FD8 /* UIKit.framework */,
+				3D9DA84E17278D3C00565FD8 /* Foundation.framework */,
+				3D9DA85017278D3C00565FD8 /* CoreGraphics.framework */,
+				3D9DA87317278D3C00565FD8 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3D9DA85217278D3C00565FD8 /* iOSReal */ = {
+			isa = PBXGroup;
+			children = (
+				3D7CBE8F1761A71C00FD49A7 /* Bluethooth */,
+				3D7752F0175C329900259C78 /* Accelero */,
+				3D9DA85B17278D3C00565FD8 /* ZHAppDelegate.h */,
+				3D9DA85C17278D3C00565FD8 /* ZHAppDelegate.m */,
+				3D9DA86417278D3C00565FD8 /* MainStoryboard_iPhone.storyboard */,
+				3D9DA86717278D3C00565FD8 /* MainStoryboard_iPad.storyboard */,
+				3D9DA86A17278D3C00565FD8 /* ZHViewController.h */,
+				3D9DA86B17278D3C00565FD8 /* ZHViewController.m */,
+				3D9DA85317278D3C00565FD8 /* Supporting Files */,
+				3D553A7817297EAD00CAB630 /* ZHThreeTouchView.h */,
+				3DEAF9B11769D078009B384D /* MyMapAnnotation.h */,
+				3DEAF9B21769D078009B384D /* MyMapAnnotation.m */,
+				3D553A7917297EAD00CAB630 /* ZHThreeTouchView.m */,
+			);
+			path = iOSReal;
+			sourceTree = "<group>";
+		};
+		3D9DA85317278D3C00565FD8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DE42DF5173607A800E0F1C2 /* compass.png */,
+				3D9DA8A11727A6CA00565FD8 /* apple.jpg */,
+				3D9DA85417278D3C00565FD8 /* iOSReal-Info.plist */,
+				3D9DA85517278D3C00565FD8 /* InfoPlist.strings */,
+				3D9DA85817278D3C00565FD8 /* main.m */,
+				3D9DA85A17278D3C00565FD8 /* iOSReal-Prefix.pch */,
+				3D9DA85E17278D3C00565FD8 /* Default.png */,
+				3D9DA86017278D3C00565FD8 /* Default@2x.png */,
+				3D9DA86217278D3C00565FD8 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D9DA87917278D3C00565FD8 /* iOSRealTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D9DA87F17278D3C00565FD8 /* iOSRealTests.h */,
+				3D9DA88017278D3C00565FD8 /* iOSRealTests.m */,
+				3D9DA87A17278D3C00565FD8 /* Supporting Files */,
+			);
+			path = iOSRealTests;
+			sourceTree = "<group>";
+		};
+		3D9DA87A17278D3C00565FD8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D9DA87B17278D3C00565FD8 /* iOSRealTests-Info.plist */,
+				3D9DA87C17278D3C00565FD8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D9DA84717278D3C00565FD8 /* iOSReal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D9DA88417278D3C00565FD8 /* Build configuration list for PBXNativeTarget "iOSReal" */;
+			buildPhases = (
+				3D9DA84417278D3C00565FD8 /* Sources */,
+				3D9DA84517278D3C00565FD8 /* Frameworks */,
+				3D9DA84617278D3C00565FD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSReal;
+			productName = iOSReal;
+			productReference = 3D9DA84817278D3C00565FD8 /* iOSReal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D9DA87117278D3C00565FD8 /* iOSRealTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D9DA88717278D3C00565FD8 /* Build configuration list for PBXNativeTarget "iOSRealTests" */;
+			buildPhases = (
+				3D9DA86D17278D3C00565FD8 /* Sources */,
+				3D9DA86E17278D3C00565FD8 /* Frameworks */,
+				3D9DA86F17278D3C00565FD8 /* Resources */,
+				3D9DA87017278D3C00565FD8 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D9DA87817278D3C00565FD8 /* PBXTargetDependency */,
+			);
+			name = iOSRealTests;
+			productName = iOSRealTests;
+			productReference = 3D9DA87217278D3C00565FD8 /* iOSRealTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D9DA83F17278D3C00565FD8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ZH;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = LiZhaoJin;
+			};
+			buildConfigurationList = 3D9DA84217278D3C00565FD8 /* Build configuration list for PBXProject "iOSReal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3D9DA83D17278D3C00565FD8;
+			productRefGroup = 3D9DA84917278D3C00565FD8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D9DA84717278D3C00565FD8 /* iOSReal */,
+				3D9DA87117278D3C00565FD8 /* iOSRealTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D9DA84617278D3C00565FD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D9DA85717278D3C00565FD8 /* InfoPlist.strings in Resources */,
+				3D9DA85F17278D3C00565FD8 /* Default.png in Resources */,
+				3D9DA86117278D3C00565FD8 /* Default@2x.png in Resources */,
+				3D9DA86317278D3C00565FD8 /* Default-568h@2x.png in Resources */,
+				3D9DA86617278D3C00565FD8 /* MainStoryboard_iPhone.storyboard in Resources */,
+				3D9DA86917278D3C00565FD8 /* MainStoryboard_iPad.storyboard in Resources */,
+				3D9DA8A21727A6CA00565FD8 /* apple.jpg in Resources */,
+				3DE42DF6173607A800E0F1C2 /* compass.png in Resources */,
+				3D7752F5175C32C200259C78 /* boy.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D9DA86F17278D3C00565FD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D9DA87E17278D3C00565FD8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D9DA87017278D3C00565FD8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D9DA84417278D3C00565FD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DEAF9B41769D0EA009B384D /* MyMapAnnotation.m in Sources */,
+				3D9DA85917278D3C00565FD8 /* main.m in Sources */,
+				3D9DA85D17278D3C00565FD8 /* ZHAppDelegate.m in Sources */,
+				3D9DA86C17278D3C00565FD8 /* ZHViewController.m in Sources */,
+				3D553A7A17297EAD00CAB630 /* ZHThreeTouchView.m in Sources */,
+				3D7752F3175C329A00259C78 /* ZHAcceleroViewController.m in Sources */,
+				3D7CBE921761A71C00FD49A7 /* ZHBluethoothViewController.m in Sources */,
+				3D12C9601772F88D00830B90 /* ZHCoreBluetoothServerViewController.m in Sources */,
+				3D12C9631772F89F00830B90 /* ZHCoreBluetoothClientViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D9DA86D17278D3C00565FD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D9DA88117278D3C00565FD8 /* iOSRealTests.m in Sources */,
+				3DEAF9B31769D078009B384D /* MyMapAnnotation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D9DA87817278D3C00565FD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D9DA84717278D3C00565FD8 /* iOSReal */;
+			targetProxy = 3D9DA87717278D3C00565FD8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D9DA85517278D3C00565FD8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D9DA85617278D3C00565FD8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3D9DA86417278D3C00565FD8 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D9DA86517278D3C00565FD8 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		3D9DA86717278D3C00565FD8 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D9DA86817278D3C00565FD8 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		3D9DA87C17278D3C00565FD8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D9DA87D17278D3C00565FD8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D9DA88217278D3C00565FD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Novo Nordisk A/S";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CDF2005A-2698-4C29-922B-A0E0B49CE45A";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D9DA88317278D3C00565FD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Novo Nordisk A/S";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CDF2005A-2698-4C29-922B-A0E0B49CE45A";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D9DA88517278D3C00565FD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSReal/iOSReal-Prefix.pch";
+				INFOPLIST_FILE = "iOSReal/iOSReal-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3D9DA88617278D3C00565FD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSReal/iOSReal-Prefix.pch";
+				INFOPLIST_FILE = "iOSReal/iOSReal-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		3D9DA88817278D3C00565FD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iOSReal.app/iOSReal";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSReal/iOSReal-Prefix.pch";
+				INFOPLIST_FILE = "iOSRealTests/iOSRealTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		3D9DA88917278D3C00565FD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iOSReal.app/iOSReal";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSReal/iOSReal-Prefix.pch";
+				INFOPLIST_FILE = "iOSRealTests/iOSRealTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D9DA84217278D3C00565FD8 /* Build configuration list for PBXProject "iOSReal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D9DA88217278D3C00565FD8 /* Debug */,
+				3D9DA88317278D3C00565FD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D9DA88417278D3C00565FD8 /* Build configuration list for PBXNativeTarget "iOSReal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D9DA88517278D3C00565FD8 /* Debug */,
+				3D9DA88617278D3C00565FD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D9DA88717278D3C00565FD8 /* Build configuration list for PBXNativeTarget "iOSRealTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D9DA88817278D3C00565FD8 /* Debug */,
+				3D9DA88917278D3C00565FD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D9DA83F17278D3C00565FD8 /* Project object */;
+}

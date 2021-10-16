@@ -1,0 +1,9 @@
+<script type="text/javascript">
+    function sendCommand(cmd,param){
+        var url="protocol://"+cmd+":"+param;
+        document.location = url;
+    }
+</script>
+
+
+<input type="button" value="call obj-c" onClick="sendCommand('act','param');" />   

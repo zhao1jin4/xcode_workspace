@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Device Properties Example</title>
+        
+        <script type="text/javascript" charset="utf-8" src="../cordova-dev.js"></script>
+        <script type="text/javascript" charset="utf-8">
+            
+            window.echo = function(str, callback) {
+            /*
+            格式第一个参数是执行成功调用的函数
+            第二个参数执行失败调用的函数
+            第三个本地类,与<plugin name=""的值匹配
+            第四个本地方法
+            第五个本地方法的参数
+            */
+            cordova.exec(callback, function(err) {
+                 callback('Nothing to echo.');
+                 }, "Service", "echo", [str]);
+            };
+
+            //------Objective-C本地
+            /*
+             config.xml中增加 <plugin name="Service" value="ZHServicePlugin" />
+             只一个实例,生命周期与UIWebView同,在第一次调用时实例化,如加onload="true"启动就初始化
+             
+             #import <Cordova/CDV.h>
+             ZHServicePlugin : CDVPlugin,也可覆盖其它方法,如 pause, resume, 
+
+             - (void)echo:(CDVInvokedUrlCommand*)command //方法签名
+             {
+                 CDVPluginResult* pluginResult = nil;
+                 NSString* myarg = [command.arguments objectAtIndex:0];
+                 NSString* res=[NSString stringWithFormat:@"hello %@",myarg];
+                 if (myarg != nil) 
+                {
+                    pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:res];
+                    //静态方法,也可带参数messageAsXxx,String, Int, Double, Bool, Array, Dictionary, ArrayBuffer, and Multipart
+                    //messageAsArrayBuffer要使用NSData* 做参数,JS端也是NSData*
+                    //messageAsMultipart要使用NSArray* 做参数,
+                } else {
+                    pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsString:@"Arg was null"];
+                }
+                 [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+                //commandDelegate 在CDVPlugin.h中,sendPluginResult方法是线程安全的
+             }
+
+             */
+            //------Adnroid本地
+            /*
+            <plugin name="Service" value="org.zhaojin.ServicePlugin"/>
+            JS并不在UI线程,而是在WebCore线程
+            
+            import org.apache.cordova.api.CallbackContext;
+            import org.apache.cordova.api.CordovaPlugin;
+
+            import org.json.JSONArray;
+            import org.json.JSONException;
+            public class  ServicePlugin extends CordovaPlugin {
+	        	public boolean execute(String action, JSONArray args, final CallbackContext callbackContext) throws JSONException {
+	        	    if ("echo".equals(action)) {
+	        	    	String message = args.getString(0); 
+	        	    	 cordova.getActivity().runOnUiThread(new Runnable() {//与UI交互
+	        	              public void run() {
+	        	            	  //...
+	        	                  callbackContext.success(); // Thread-safe.
+	        	              }
+	        	          });
+	        	    	  cordova.getThreadPool().execute(new Runnable() {//开新的线程,而不阻塞WebCore线程
+	        	              public void run() {
+	        	                 // ...
+	        	                  callbackContext.success(); // Thread-safe.
+	        	              }
+	        	          });
+	        	    	   
+	        	    	this.echo(message, callbackContext);
+	        	        callbackContext.success();
+	        	        return true;
+	        	    }
+	        	    return false;  // Returning false results in a "MethodNotFound" error.
+	        	}
+            */
+            
+            function myplugin()
+            {
+                window.echo("lisi",function(res){
+                            alert("result is:"+res);
+                            });
+            }
+            </script>
+    </head>
+    <body>
+        <button onclick="myplugin()">invoke my plugin</button>
+        <button onclick="history.back()">go back</button>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[ZHMyThirdViewController viewDidLoad]:ZHMyThirdViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[ZHMyThirdViewController tableView:numberOfRowsInSection:]:ZHMyThirdViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.data">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ZHMyThirdViewController textFieldDidBeginEditing:]:ZHMyThirdViewController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[activeField tag]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
